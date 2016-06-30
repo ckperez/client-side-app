@@ -19,8 +19,8 @@
       </li>
     </ul>
     <form ng-submit="snakesctrl.addSnake(snake)">
-      <input ng-model="snakesctrl.snake.name" type="text" />
-      <input ng-model="snakesctrl.snake.size" type="number" />
+      <input ng-model="snakesctrl.snake.name" type="text" placeholder="Snake name" />
+      <input ng-model="snakesctrl.snake.size" type="number" placeholder="Power level" />
       <button type="submit">New Snake</button>
     </form>
   </main>
@@ -38,8 +38,8 @@
       </li>
     </ul>
     <form ng-submit="weaselsctrl.addWeasel(weasel)">
-      <input ng-model="weaselsctrl.weasel.name" type="text" />
-      <input ng-model="weaselsctrl.weasel.strength" type="number" />
+      <input ng-model="weaselsctrl.weasel.name" type="text" placeholder="Weasel name"/>
+      <input ng-model="weaselsctrl.weasel.strength" type="number" placeholder="Power level"/>
       <button type="submit">New Weasel</button>
     </form>
   </main>

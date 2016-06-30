@@ -4,7 +4,7 @@ module.exports = function(app){
 
 function SnakesController($http){
   this.$http = $http;
-  this.snakes = [];
+  this.snakes = []; // { "_id" : ObjectId("5768307acb689269b859775d"), "name" : "Dusty on Rails", "size" : 3, "weaselKiller" : true, "__v" : 0 }
   this.url = 'http://localhost:2222/snakes/';
 }
 
@@ -49,4 +49,4 @@ SnakesController.prototype.updateSnake = function(snake, updated){
       console.log(err);
     });
 
-};
+}; //gonna want to add .bind(this) to all the prototype functions

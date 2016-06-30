@@ -5,7 +5,7 @@ module.exports = function(app){
 
 function WeaselsController($http){
   this.$http = $http;
-  this.weasels = [];
+  this.weasels = []; //{ "_id" : ObjectId("57683082cb689269b859775e"), "name" : "Business Drew", "strength" : 3, "snakeKiller" : true, "__v" : 0 }
   this.url = 'http://localhost:2222/weasels/';
 }
 
@@ -50,4 +50,4 @@ WeaselsController.prototype.updateWeasel = function(weasel, updated){
       console.log(err);
     });
 
-};
+};  //gonna want to move the prototype into the controller function itself
